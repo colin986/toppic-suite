@@ -18,6 +18,10 @@ RUN apt-get install -y zlib1g-dev
 # install Qt5 for GUI
 RUN apt-get install -y qtbase5-dev
 
-RUN https://github.com/colin986/toppic-suite.git
+RUN git clone https://github.com/colin986/toppic-suite.git
 
-
+RUN mkdir build
+RUN cd build
+RUN cmake ..
+RUN make -j$(nproc)
+RUN make install
