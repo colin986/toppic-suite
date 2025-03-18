@@ -22,6 +22,7 @@ RUN apt-get install -y git
 
 RUN git clone https://github.com/colin986/toppic-suite.git
 
+RUN cd toppic-suite
 RUN mkdir build
 RUN cd build
 RUN cmake ..
