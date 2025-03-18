@@ -25,6 +25,6 @@ RUN git clone https://github.com/colin986/toppic-suite.git
 RUN cd toppic-suite
 RUN mkdir build
 RUN cd build
-RUN cmake ..
+RUN cmake /toppic-suite/
 RUN make -j$(nproc)
 RUN make install
