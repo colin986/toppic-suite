@@ -5,7 +5,7 @@ FROM $BASE_IMAGE
 RUN apt-get update
 RUN apt-get upgrade -y
 
-RUN apt-get install build-essential cmake
+RUN apt-get install -y build-essential cmake
 
 RUN apt-get install libboost-chrono-dev 
 RUN apt-get install libboost-filesystem-dev 
