@@ -16,4 +16,4 @@ RUN apt-get install -y libxerces-c-dev
 RUN apt-get install -y zlib1g-dev 
 
 # install Qt5 for GUI
-RUN sudo apt-get install -y qtbase5-dev
+RUN apt-get install -y qtbase5-dev
