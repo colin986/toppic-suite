@@ -26,5 +26,5 @@ RUN cd toppic-suite
 RUN mkdir build
 RUN cd build
 RUN cmake /toppic-suite/
-RUN make -j$(nproc)
+RUN make 
 RUN make install
