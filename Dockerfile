@@ -17,3 +17,7 @@ RUN apt-get install -y zlib1g-dev
 
 # install Qt5 for GUI
 RUN apt-get install -y qtbase5-dev
+
+RUN https://github.com/colin986/toppic-suite.git
+
+
